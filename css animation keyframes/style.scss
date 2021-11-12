@@ -1,0 +1,171 @@
+// body{
+//     padding: 100px;
+//     background-color: rgb(248, 216, 128);
+// }
+// $size: 20px;
+// $distance: 40px;
+// $speed: 4s;
+// $animation: linear;
+// $delay: 0s;
+// $iterationCount: infinite;
+
+
+// .wrapper,
+// .ball{
+//     width: $size;
+//     height: $size;
+
+// }
+
+
+
+// .wrapper{
+//     position: relative;
+// }
+
+
+// .ball{
+//     position: absolute;
+//     border-radius: $size ;
+  
+
+//     &-1{
+//         background-color: red;
+        
+//         animation:$speed $animation $delay $iterationCount
+//           ball-1;
+//     }
+//     &-2{
+//         background-color: green;
+        
+//         animation:$speed $animation $delay $iterationCount
+//           ball-2;
+//     }
+//     &-3{
+//         background-color: blue;
+        
+//         animation:$speed $animation $delay $iterationCount
+//           ball-3;
+//     }
+//     &-4{
+//         background-color: pink;
+        
+//         animation:$speed $animation $delay $iterationCount
+//           ball-4;
+       
+//     }
+// }
+
+
+// @keyframes ball-1 {
+//      0%,
+//      100%{transform: translate(0, 0);            }
+//      25%{transform: translate(0, -$distance);      }
+//      50%{transform: translate($distance, 0);      }
+//      75%{transform: translate(-$distance, 0);      }
+ 
+// }
+// @keyframes ball-3 {
+//     0%,
+//     100%{transform: translate(0, 0);            }
+//     25%{transform: translate(0, $distance);      }
+//     50%{transform: translate(-$distance, 0);      }
+//     75%{transform: translate($distance, 0);      }
+
+// }
+// @keyframes ball-2 {
+//     0%,
+//     100%{transform: translate(0, 0);            }
+//     25%{transform: translate($distance, 0);      }
+//     50%{transform: translate(0, $distance);      }
+//     75%{transform: translate(0, -$distance);      }
+
+// }
+// @keyframes ball-4 {
+//     0%,
+//     100%{transform: translate(0, 0);            }
+//     25%{transform: translate(-$distance, 0);      }
+//     50%{transform: translate(0, -$distance);      }
+//     75%{transform: translate(0, $distance);      }
+
+// }
+
+
+
+
+body{
+    padding: 300px;
+    background-color: wheat;
+}
+
+$size: 20px;
+$distance: 40px;
+$speed: 4s;
+$animation: linear;
+$delay: 0s;
+$iterationCount: infinite;
+
+
+
+
+
+
+.container, .ball{
+    width: $size;
+    height: $size;
+
+}
+.container{
+    position: relative;
+
+}
+.ball{
+    position: absolute;
+    border-radius: $size;
+
+    &-1{
+        background-color: red;
+        animation:$speed $animation $delay $iterationCount ball-1;
+    }
+    &-2{
+        background-color: green;
+        animation:$speed $animation $delay $iterationCount ball-2;
+    }
+    &-3{
+        background-color: blue;
+        animation:$speed $animation $delay $iterationCount ball-3;
+    }
+    &-4{
+        background-color: pink;
+        animation:$speed $animation $delay $iterationCount ball-4;
+    }
+}
+
+@keyframes ball-1{
+    0%,
+    100%{transform: translate(0,0);}
+    25%{transform: translate(0,-$distance);}
+    50%{transform: translate($distance,0);}
+    75%{transform: translate(-$distance,0);}
+}
+@keyframes ball-3{
+    0%,
+    100%{transform: translate(0,0);}
+    25%{transform: translate(0,$distance);}
+    50%{transform: translate(-$distance,0);}
+    75%{transform: translate($distance,0);}
+}
+@keyframes ball-2{
+    0%,
+    100%{transform: translate(0,0);}
+    25%{transform: translate(-$distance,);}
+    50%{transform: translate(0,-$distance);}
+    75%{transform: translate(0, $distance);}
+}
+@keyframes ball-4{
+    0%,
+    100%{transform: translate(0,0);}
+    25%{transform: translate($distance,0);}
+    50%{transform: translate(0,$distance);}
+    75%{transform: translate(0,-$distance);}
+}

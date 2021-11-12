@@ -1,0 +1,54 @@
+.text{
+    text-align: center;
+    margin: 50px 0;
+    font-size: 24px;
+    font-family: sans-serif;
+}
+
+
+.text_1{
+    animation: anim-1;
+
+    animation-duration: 1s;
+}
+
+.text_2{
+    animation: anim-2 ;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-iteration-count: 2;
+    
+}
+
+
+@keyframes anim-1{
+    0%{
+        transform: translateX(-3000px);
+    }
+
+
+    100%{
+        transform: translateX(0px);
+    }
+
+}
+
+
+
+@keyframes anim-2{
+    0%{
+        transform: scale(2);
+    }
+
+    50%{
+        transform: scale(5);
+    }
+
+    100%{
+        transform: scale(2, -0.5);
+    }
+
+}
+
+
+
